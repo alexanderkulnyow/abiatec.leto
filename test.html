@@ -1,0 +1,66 @@
+<header id="masthead" class="site-header">
+    <nav id="site-navigation" class="navbar navbar-expand-lg navbar-light bg-white justify-content-between">
+        <div class="container">
+            <div class="row">
+                <div class="col-2 site-branding"><?php the_custom_logo(); ?></div>
+                <div class="col-8 col-lg-10 col-xl-7 offset-xl-3 navbar__contacts">
+                    <div class="site_social row w-100">
+                        <div class="col-3 schedule_container d-none d-lg-block p-0">
+                            <span>График работы:</span> <br>
+                            <p class="schedule"> <?php echo nl2br( esc_html( get_theme_mod( 'schedule', 'текст по умолчанию' ) ) ); ?></p>
+                        </div>
+                        <div class="col-5 timetable d-none d-lg-block">
+                            <span class="adress_1"><?php echo nl2br( esc_html( get_theme_mod( 'adress_1', 'текст по умолчанию' ) ) ); ?></span>
+                            <br>
+                            <span class="adress_2"><?php echo nl2br( esc_html( get_theme_mod( 'adress_2', 'текст по умолчанию' ) ) ); ?></span>
+                        </div>
+                        <div class="col-12 col-lg-4 timetable footer__phones">
+                            <a class="phone_1"
+                               href="tel:<?php echo nl2br( esc_html( get_theme_mod( 'phone_1', 'текст по умолчанию' ) ) ); ?>"><?php echo nl2br( esc_html( get_theme_mod( 'phone_1', 'текст по умолчанию' ) ) ); ?>
+                                <span>MTS</span>
+                            </a>
+                            <br>
+                            <a class="phone_2"
+                               href="tel:<?php echo nl2br( esc_html( get_theme_mod( 'phone_2', 'текст по умолчанию' ) ) ); ?>"><?php echo nl2br( esc_html( get_theme_mod( 'phone_2', 'текст по умолчанию' ) ) ); ?>
+                                <span>Velcom</span>
+                            </a>
+                            <div class="d-flex justify-content-start footer__social">
+
+                                <a href="<?php echo nl2br( esc_html( get_theme_mod( 'facebook', 'текст по умолчанию' ) ) ); ?>">
+                                    <img width="20" height="20"
+                                         src="<?php echo get_template_directory_uri() ?>/img/icons/i_fb.svg"
+                                         alt="">
+                                </a>
+
+                                <a href="<?php echo nl2br( esc_html( get_theme_mod( 'instagram', 'текст по умолчанию' ) ) ); ?>">
+                                    <img src="<?php echo get_template_directory_uri() ?>/img/icons/i_inst.svg"
+                                         width="20" height="20" alt="">
+                                </a>
+                                <a href="<?php echo nl2br( esc_html( get_theme_mod( 'pinterest', 'текст по умолчанию' ) ) ); ?>">
+                                    <img width="20" height="20"
+                                         src="<?php echo get_template_directory_uri() ?>/img/icons/i_pinterest.svg"
+                                         alt="">
+                                </a>
+                                <a href="<?php echo nl2br( esc_html( get_theme_mod( 'WhatsApp', 'текст по умолчанию' ) ) ); ?>">
+                                    <img width="20" height="20"
+                                         src="<?php echo get_template_directory_uri() ?>/img/icons/i_WhatsApp.svg"
+                                         alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-2 d-lg-none">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarsExample07"
+                                aria-controls="navbarsExample07" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
